@@ -1,4 +1,10 @@
 #pragma once
+#include "stdafx.h"
+using namespace std;
+void vetor();
+int montaMenu();
+void menu(char [40], int &);
+
 void vetor() {
 	int vetor[5] = { 3,5,6,7,4 };
 	cout << "\nEndereco e valor da posicao 1 do vetor: " << &vetor[0] << "\t" << vetor[0] << endl;

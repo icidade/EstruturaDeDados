@@ -10,7 +10,6 @@
 #include <tchar.h>
 #include <cctype>
 #include <iostream>
-#include "minhaLib.h"
 
 
 // TODO: reference additional headers your program requires here
