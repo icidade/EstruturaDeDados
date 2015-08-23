@@ -7,6 +7,7 @@
 using namespace std;
 int main()
 {
+	system("chcp 1252 > nul");
 	cifraMensagem();
-	system("pause");
+	system("pause >null");
 }
