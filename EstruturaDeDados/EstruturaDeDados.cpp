@@ -4,50 +4,51 @@
 #include "stdafx.h"
 using namespace std;
 
-void montaMenu();
-void menu(char[40]);
+int montaMenu();
+void menu(char [40], int &);
 void vetor();
 
 int main()
 {
 	//vetor();
-	
+	return montaMenu();
 }
 
-void montaMenu() {
-	void menu(char nome[40]);
+int montaMenu() {
 	char nome[40];
-	cout << &nome;
-	cin.get();
 	int esc;
+	system("color 1e");
+	system("cls");
 	do {
-		menu(nome);
-		cin >> esc;
+		menu(nome, esc);
 		switch (esc) {
-		case 0: cout << "\nsaindo...";
+		case 0: cout << "\nsaindo...\n";
 			break;
 		default:
+			menu(nome, esc);
 			break;
 		}
 	} while (esc != 0);
-	system("pause");
+	return esc;
 }
 
-void menu(char nome[40]) {
+void menu(char nome[40], int &esc) {
 	system("cls");
-	system("color 1e");
 	cout << "\nDigite um nome: ";
-	cin.getline(nome, 40);
+	cin >> nome;
 	system("cls");
-	cout << "Voce digitou: " << nome;
-
-	cout << "\n digite qualquer tecla para continuar ou 0 para sair";
+	cout << "Voce digitou: " << nome << "\n";
+	cout << "Digite qualquer numero para continuar ou 0 para sair \n";
+	cin >> esc;
 }
 
 void vetor() {
 	int vetor[5] = { 3,5,6,7,4 };
-	cout << "\nEndereco da posicao 1 do vetor: " << &vetor[0] << endl;
-	cout << "\nValor da posicao 1 do vetor: " << vetor[0] << endl;
+	cout << "\nEndereco e valor da posicao 1 do vetor: " << &vetor[0] << "\t" << vetor[0] << endl;
+	cout << "\nEndereco e valor da posicao 2 do vetor: " << &vetor[1] << "\t" << vetor[1] << endl;
+	cout << "\nEndereco e valor da posicao 3 do vetor: " << &vetor[2] << "\t" << vetor[2] << endl;
+	cout << "\nEndereco e valor da posicao 4 do vetor: " << &vetor[3] << "\t" << vetor[3] << endl;
+	cout << "\nEndereco e valor da posicao 5 do vetor: " << &vetor[4] << "\t" << vetor[4] << endl;
 	cout << "\nEndereco do vetor: " << &vetor << endl;
 	cout << "\nVetor: " << vetor<<"\n";
 	system("pause");
