@@ -1,21 +1,6 @@
-#pragma once
 #include "stdafx.h"
 
 using namespace std;
-
-void test1(int);
-void test2(int &);
-int test3(int);
-int calculaFatorial(int);
-bool testaPrimo(int);
-int testaVogal(char);
-int calculaCombinacoes(int, int);
-void calculaCombinacoes();
-void calcularProdutoInterno();
-void preencheVetor(int vet[], int n, char nomeVetor[]);
-void cifraMensagem();
-int replace(char[], int &, char &);
-
 int x = 20;
 
 void mainListaExercicios1() {
@@ -54,7 +39,7 @@ int test3(int n) {
 
 int calculaFatorial(int n) {
 	int retorno = 1;
-	for (int i = 1; i <= n ; i++)
+	for (int i = 1; i <= n; i++)
 	{
 		retorno = retorno * i;
 	}
@@ -112,7 +97,7 @@ void calculaCombinacoes() {
 }
 
 void calcularProdutoInterno() {
-	int n, TAM=10, x[10], y[10], produtoIterno = 0;
+	int n, TAM = 10, x[10], y[10], produtoIterno = 0;
 	cout << "CALCULA PRODUTO INTERNO" << endl;
 	do {
 		cout << "digite o numero da dimensao do vetor: ";
@@ -142,7 +127,7 @@ void preencheVetor(int vet[], int n, char nomeVetor[]) {
 }
 
 void cifraMensagem() {
-	int tamanho = 40, ttt, i=0;
+	int tamanho = 40, ttt, i = 0;
 	char msg[40], repchar;
 	cout << "Digite uma mensagem: ";
 	cin.getline(msg, 40);
