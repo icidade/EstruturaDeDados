@@ -6,6 +6,6 @@ using namespace std;
 
 int main()
 {
-	exemplo_struct_com_funcao();
+	funcionarios_empresa_de_impressoras();
 	system("pause");
 }

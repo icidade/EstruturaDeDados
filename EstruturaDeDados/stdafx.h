@@ -12,27 +12,12 @@
 #include <iostream>
 #include <cstring>
 
-
 // TODO: reference additional headers your program requires here
 
 using namespace std;
 void vetor();
 int montaMenu();
 void menu(char[40], int &);
-
-//listaExercicios1
-void test1(int);
-void test2(int &);
-int test3(int);
-int calculaFatorial(int);
-bool testaPrimo(int);
-int testaVogal(char);
-int calculaCombinacoes(int, int);
-void calculaCombinacoes();
-void calcularProdutoInterno();
-void preencheVetor(int vet[], int n, char nomeVetor[]);
-void cifraMensagem();
-int replace(char[], int &, char &);
 
 //aula 1 e 2 
 void vetor();
@@ -53,3 +38,34 @@ void exemplo_struct_com_passagem_por_referencia();
 void maiuscula(char func[]);
 void passagem_de_membro_que_e_vetor();
 void exemplo_struct_com_funcao();
+
+//listaExercicios1
+void test1(int);
+void test2(int &);
+int test3(int);
+int calculaFatorial(int);
+bool testaPrimo(int);
+int testaVogal(char);
+int calculaCombinacoes(int, int);
+void calculaCombinacoes();
+void calcularProdutoInterno();
+void preencheVetor(int vet[], int n, char nomeVetor[]);
+void cifraMensagem();
+int replace(char[], int &, char &);
+
+//listaExercicios2
+struct dtContratacao {
+	char dia[2];
+	char mes[2];
+	int ano;
+};
+struct funcsHP {
+	int matricula;
+	dtContratacao dtentrada;
+	char cargo[20];
+};
+
+void notas_ginastas();
+void procura_funcionarios_mais_de_10_anos(funcsHP f[], int x);
+void lista_funcionarios(funcsHP f[], int x);
+void funcionarios_empresa_de_impressoras();
