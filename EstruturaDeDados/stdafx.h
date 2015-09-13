@@ -39,6 +39,14 @@ void maiuscula(char func[]);
 void passagem_de_membro_que_e_vetor();
 void exemplo_struct_com_funcao();
 
+//aula 4
+void selection_sort(int v[], int tam);
+void insertion_sort(int v[], int tam);
+void bubble_sort(int v[], int tam);
+
+//aula 5
+
+
 //listaExercicios1
 void test1(int);
 void test2(int &);

@@ -4,8 +4,15 @@
 
 using namespace std;
 
-int main()
+int funcao(float v[], float vl, int n)
 {
-	funcionarios_empresa_de_impressoras();
+	for (int i = 0; i < n; i++)
+		if (v[i] == vl)
+			return i;
+	return -1;
+}
+
+int main() {
+
 	system("pause");
 }

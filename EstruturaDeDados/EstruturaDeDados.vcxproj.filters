@@ -44,5 +44,11 @@
     <ClCompile Include="ListaExercicios2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="aula4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aula5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
