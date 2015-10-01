@@ -46,6 +46,10 @@ void bubble_sort(int v[], int tam);
 
 //aula 5
 
+//aula 6
+void pilha();
+void empilha(int [], int&, int);
+int desempilha(int p[], int &topo, int &val);
 
 //listaExercicios1
 void test1(int);

@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="aula5.cpp" />
+    <ClCompile Include="aula6.cpp" />
     <ClCompile Include="EstruturaDeDados.cpp" />
     <ClCompile Include="ListaExercicios1.cpp" />
     <ClCompile Include="aula1e2.cpp" />
