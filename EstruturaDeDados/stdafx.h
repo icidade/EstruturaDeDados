@@ -11,7 +11,6 @@
 #include <cctype>
 #include <iostream>
 #include <cstring>
-
 // TODO: reference additional headers your program requires here
 
 using namespace std;
@@ -50,6 +49,17 @@ void bubble_sort(int v[], int tam);
 void pilha();
 void empilha(int [], int&, int);
 int desempilha(int p[], int &topo, int &val);
+
+//aula 7
+struct queue {
+	float f[3];
+	int inicio, fim;
+};
+void inicializa();
+bool verifica_fila_cheia(queue &);
+void enfileira(queue &);
+void desenfileira(queue &);
+bool verifica_fila_vazia(queue &);
 
 //listaExercicios1
 void test1(int);
