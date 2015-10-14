@@ -40,7 +40,7 @@ void exibe_lista(cadastro_endereco favs[], int n) {
 
 int main() {
 	
-	inicializa();
+	insere_no_na_frente();
 
 	system("pause");
 }

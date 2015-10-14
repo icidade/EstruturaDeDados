@@ -55,11 +55,33 @@ struct queue {
 	float f[3];
 	int inicio, fim;
 };
+
 void inicializa();
 bool verifica_fila_cheia(queue &);
 void enfileira(queue &);
 void desenfileira(queue &);
 bool verifica_fila_vazia(queue &);
+
+//aula 8 - Alocacao dinamica
+struct data{
+	int dia, mes, ano;
+};
+void struct_em_ponteiro();
+struct cadastro{
+	char nome[30];
+	float nota;
+};
+void preenche_cadastro();
+void exibe_cadastro(cadastro*);
+void ponteiro_alocado_dinamicamente();
+void ponteiro_e_matriz_de_estruturas();
+struct nodo{
+	int num;
+	struct nodo* prox;
+};
+void cria_no();
+void cria_lista_com_nodos();
+void insere_no_na_frente();
 
 //listaExercicios1
 void test1(int);
