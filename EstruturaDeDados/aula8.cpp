@@ -110,7 +110,7 @@ void cria_lista_com_nodos(){
 	delete lista; lista = 0;
 }
 
-void insere_no_na_frente(){
+void exemplo_insere_na_frente(){
 	nodo *temp, *lista = NULL;
 
 	//primeiro no
@@ -129,5 +129,39 @@ void insere_no_na_frente(){
 	cout << "\nNodo2 = " << lista->prox->num;
 
 	delete lista; lista = 0;
+}
+
+void lista_encadeada_inserindo_na_frente(){
+	int c;
+	nodo *lista = NULL;
+
+	//primeiro nodo
+	lista = insere_frente(lista, 23);
+	//segundo nodo
+	lista = insere_frente(lista, 13);
+	//terceiro nodo
+	lista = insere_frente(lista, 15);
+	//quarto nodo
+	lista = insere_frente(lista, 18);
+
+	//listando
+	c = 1;
+	cout << "\n\nUsando uma estrutura de repeticao\n";
+	while (lista){
+		cout << "\nValor do " << c << "o nodo: " << lista->num;
+		lista = lista->prox; //pontera para o proximo nodo.
+		c++;
+	}
+
+	//liberando
+	delete lista; lista = 0;
+	cout << "\n\n";
+}
+
+nodo * insere_frente(nodo * ptr, int valor){
+	nodo *temp = new nodo;
+	temp->num = valor;
+	temp->prox = ptr;
+	return temp;
 }
 

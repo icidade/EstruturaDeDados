@@ -81,7 +81,9 @@ struct nodo{
 };
 void cria_no();
 void cria_lista_com_nodos();
-void insere_no_na_frente();
+void exemplo_insere_na_frente();
+void lista_encadeada_inserindo_na_frente();
+nodo* insere_frente(nodo *, int);
 
 //listaExercicios1
 void test1(int);
