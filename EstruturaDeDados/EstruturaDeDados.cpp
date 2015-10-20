@@ -40,7 +40,7 @@ void exibe_lista(cadastro_endereco favs[], int n) {
 
 int main() {
 	
-	lista_encadeada_inserindo_na_frente();
+	menuListaEncadeada();
 
 	system("pause");
 }

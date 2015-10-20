@@ -11,6 +11,7 @@
 #include <cctype>
 #include <iostream>
 #include <cstring>
+#include <cstdlib>
 // TODO: reference additional headers your program requires here
 
 using namespace std;
@@ -62,7 +63,7 @@ void enfileira(queue &);
 void desenfileira(queue &);
 bool verifica_fila_vazia(queue &);
 
-//aula 8 - Alocacao dinamica
+//aula 8 - Alocacao dinamica - lista encadeada
 struct data{
 	int dia, mes, ano;
 };
@@ -84,6 +85,34 @@ void cria_lista_com_nodos();
 void exemplo_insere_na_frente();
 void lista_encadeada_inserindo_na_frente();
 nodo* insere_frente(nodo *, int);
+int menuListaEncadeada();
+nodo *insereFrente(nodo *ptr, int valor);
+nodo *insereFim(nodo *ptr, int valor);
+void exibe(nodo *ptr);
+nodo *removeFrente(nodo *ptr);
+nodo *removeFim(nodo *ptr);
+void substituiNo(nodo *ptr, int posicao, int novoValor);
+int buscaSequencial(nodo *ptr, int valor);
+void libera(nodo *ptr);
+int contaNos(nodo *ptr);
+
+
+//aula 9 - Pilhas e filas dinâmicas
+//pilha dinamica:
+nodo *insereFrente(nodo *plista, int valor);
+void exibeTopo(nodo *plista);
+void exibeLista(nodo *lista);
+nodo *remove(nodo *plista);
+void libera(nodo *plista);
+int pilha_dinamica();
+//fila dinâmica:
+nodo *insereFim(nodo *plista, int valor);
+void exibePrimeiro(nodo *plista);
+nodo *remove(nodo *plista);
+void libera(nodo *plista);
+void exibeLista(nodo *plista);
+int fila_dinamica();
+
 
 //listaExercicios1
 void test1(int);
