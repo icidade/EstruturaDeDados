@@ -113,6 +113,21 @@ void libera(nodo *plista);
 void exibeLista(nodo *plista);
 int fila_dinamica();
 
+//aula10 - listas duplamente encadeadas
+struct listaDE
+{
+	int info;
+	struct listaDE* ant;
+	struct listaDE* prox;
+};
+//Protótipos
+listaDE *insere(listaDE *LISTA, int valor);
+void exibe(listaDE *LISTA);
+listaDE *remove(listaDE *LISTA, int valor);
+listaDE *busca(listaDE *LISTA, int valor);
+int contaNos(listaDE *LISTA);
+void libera(listaDE *LISTA);
+int lista_duplamente_encadeada();
 
 //listaExercicios1
 void test1(int);
